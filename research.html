@@ -16,11 +16,13 @@
           color: white;
           padding: 20px;
           font-size: 24px;
+	  display: grid;
+	  grid-template-columns: 1fr 1fr; <!-- Creates two equal-width columns -->
 	  max-width: 800px; <!-- Match the width of body text -->
 	  margin: 0 auto; <!-- Center-align the header -->
-	  display: flex;
-          justify-content: space-between; <!-- Aligns left and right -->
-          align-items: center; <!-- Vertically centers the items -->
+	  <!-- display: flex;-->
+          <!-- justify-content: space-between;--> <!-- Aligns left and right -->
+          <!-- align-items: center;--> <!-- Vertically centers the items -->
       }
       nav {
           margin: 20px 0;
@@ -51,7 +53,7 @@
   <body>
     <header>
       <div>Research</div> <!-- Left-aligned content -->
-      <div style="font-size: 16pt;">Agnieszka Sorensen, PhD</div> <!-- Right-aligned content -->
+      <div style="font-size: 12pt;">Agnieszka Sorensen, PhD</div> <!-- Right-aligned content -->
     </header>
     <nav>
       <a href="index.html">About</a>
