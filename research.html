@@ -6,7 +6,7 @@
     <title>Research - Agnieszka Sorensen, PhD</title>
     <style>
       body {
-          font-family: "Times New Roman", Times, serif;;
+          font-family: "Times New Roman", Times, serif;
           margin: 0;
           padding: 0;
           text-align: center;
@@ -16,13 +16,11 @@
           color: white;
           padding: 20px;
           font-size: 24px;
-	  display: grid;
-	  grid-template-columns: 1fr 1fr; <!-- Creates two equal-width columns -->
-	  max-width: 800px; <!-- Match the width of body text -->
-	  margin: 0 auto; <!-- Center-align the header -->
-	  <!-- display: flex;-->
-          <!-- justify-content: space-between;--> <!-- Aligns left and right -->
-          align-items: center; <!-- Vertically centers the items -->
+          display: grid;
+          grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+          max-width: 800px;
+          margin: 0 auto;
+          align-items: center; /* Vertical centering */
       }
       nav {
           margin: 20px 0;
@@ -39,38 +37,75 @@
           text-align: left;
           padding: 20px;
       }
-      img.profile {
-          width: 150px;
-          border-radius: 50%;
-	  float: left;
-          margin-right: 20px;
+      /* Styling for research list */
+      .research-list {
+          list-style-type: none;
+          padding: 0;
       }
-      .content {
-          overflow: hidden;
+      .research-item {
+          display: flex;
+          align-items: center;
+	  border-bottom: 10px solid #ccc;
+	  padding: 10px 10px;
+	  margin-top: 5px;
+          margin-bottom: 5px;
+      }
+      .research-item img {
+          width: 350px; /* Adjust icon size */
+          height: 350px;
+          margin-left: 30px;
+      }
+      .research-description {
+          flex: 1; /* Takes up remaining space */
       }
     </style>
   </head>
   <body>
     <header>
-      <div>Research</div> <!-- Left-aligned content -->
-      <div style="font-size: 12pt;">Agnieszka Sorensen, PhD</div> <!-- Right-aligned content -->
+      <div>Service</div>
+      <div style="font-size: 12pt;">Agnieszka Sorensen, PhD</div>
     </header>
     <nav>
       <a href="index.html">About</a>
       <a href="research.html">Research</a>
       <a href="service.html">Service</a>
       <a href="teaching.html">Teaching</a>
-      <a href="publications.html">Publications</a>
       <a href="resources.html">Resources for students</a>
       <a href="cv.html">CV</a>
       <a href="contact.html">Contact</a>
     </nav>
+
     <div class="container">
-      <img src="Agnieszka_Sorensen_office2.jpg"
-	   alt="Photo of Agnieszka Sorensen in front of a blackboard showing sketches of
-		heavy-ion collisions." class="profile">
-      <h2>Hello!</h2>
-      <p>Blah blah.</p>
+      <h2>You can find all my publications on
+	<a href="https://inspirehep.net/authors/1274432?ui-citation-summary=true">InspireHEP</a>.</h2>
+      <br>
+      <h2>Currently, I am working on the following projects:</h2>
+      <ul class="research-list">
+        <li class="research-item">
+          <div class="research-description">
+            Project 1.
+          </div>
+	  <img src="Research_figure_FSS.jpeg" alt="Finite-size scaling">
+        </li>
+        <li class="research-item">
+          <div class="research-description">
+            Project 2.
+          </div>
+	  <img src="Research_figure_cumulants_in_boxes.jpeg" alt="Volume dependence of cumulants">
+        </li>
+      </ul>
+
+
+      <br>
+      <h2>My past completed projects include:</h2>
+      <ul class="research-list">
+        <li class="research-item">
+          <div class="research-description">
+            Past project 1.
+          </div>
+	  <img src="Research_figure_Bayesian_FXT_VDF.jpeg" alt="Bayesian analysis of FXT data with VDF potentials">
+        </li>
+      </ul>
     </div>
   </body>
 </html>
