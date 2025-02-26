@@ -6,7 +6,7 @@
     <title>Service - Agnieszka Sorensen, PhD</title>
     <style>
       body {
-          font-family: "Times New Roman", Times, serif;;
+          font-family: "Times New Roman", Times, serif;
           margin: 0;
           padding: 0;
           text-align: center;
@@ -16,13 +16,11 @@
           color: white;
           padding: 20px;
           font-size: 24px;
-	  display: grid;
-	  grid-template-columns: 1fr 1fr; <!-- Creates two equal-width columns -->
-	  max-width: 800px; <!-- Match the width of body text -->
-          margin: 0 auto; <!-- Center-align the header -->
-	  <!-- display: flex;-->
-	  <!-- justify-content: space-between;--> <!-- Aligns left and right -->
-	  align-items: center; <!-- Vertically centers the items -->
+          display: grid;
+          grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+          max-width: 800px;
+          margin: 0 auto;
+          align-items: center; /* Vertical centering */
       }
       nav {
           margin: 20px 0;
@@ -39,21 +37,22 @@
           text-align: left;
           padding: 20px;
       }
-      img.profile {
-          width: 150px;
-          border-radius: 50%;
-	  float: left;
-          margin-right: 20px;
+      .service-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
       }
-      .content {
-          overflow: hidden;
+      .service-item img {
+          width: 100px; /* Adjust icon size */
+          height: 50px;
+          margin-right: 15px;
       }
     </style>
   </head>
   <body>
     <header>
-      <div>Service</div> <!-- Left-aligned content -->
-      <div style="font-size: 12pt;">Agnieszka Sorensen, PhD</div> <!-- Right-aligned content -->
+      <div>Service</div>
+      <div style="font-size: 12pt;">Agnieszka Sorensen, PhD</div>
     </header>
     <nav>
       <a href="index.html">About</a>
@@ -65,38 +64,53 @@
       <a href="cv.html">CV</a>
       <a href="contact.html">Contact</a>
     </nav>
+
     <div class="container">
       <h2>I am an active member of the physics community</h2>
-      <p><b>Currently, I am serving in the following roles:</b>
-	<ol>
-	  <li>2024/09-present:
-	    Member of the Executive Committee for the Mentorships for Inclusive Nuclear
-	    Theory (MINT) program at the Institute for Nuclear Theory (INT), 
-	    University of Washington</li>
-	  <li>2024/06-present:
-	    Member of the APS Division of Nuclear Physics Mentoring Award Committee</li>
-	  <li>2023/06-present:
-	    Member of the APS Division of Nuclear Physics Education Committee</li>
-	</ol>
-      </p>
-      <p><b>In the past, I also served in the following ways:</b>
-	<ol>
-	  <li>2023/08-2024/02:
-	    Co-organizer of the INT Undergraduate Research Network (INTURN) at the
-	    Institute for Nuclear Theory (INT), University of Washington</li>
-	  <li>2023/04-2024/04:
-	    Member of the APS Division of Nuclear Physics Executive Committee</li>
-	  <li>2022/09-2023/02:
-	    Community leader in the U.S. Long Range Plan for Nuclear Science process</li>
-	  <li>2022/09-2023/08:
-	    Member of the University of Washington's Physics Department Climate and
-	    Diversity Committee</li>
-	  <li>2021/06-2023/08:
-	    Student/Postdoc Member of the RHIC & AGS Users’ Executive Committee</li>
-	  <li>2016/02-2017/06:
-	    Representative for Physics Graduate Students at UCLA</li>
-	</ol>
-      </p>
+
+      <p><b>Currently, I am serving in the following roles:</b></p>
+      <ul>
+        <li class="service-item">
+          <img src="logo_INT.png" alt="MINT Program">
+          2024/09-present: Member of the Executive Committee for the Mentorships for Inclusive Nuclear Theory (MINT) program at the Institute for Nuclear Theory (INT), University of Washington
+        </li>
+        <li class="service-item">
+          <img src="logo_APS_DNP.png" alt="APS Mentoring Award">
+          2024/06-present: Member of the APS Division of Nuclear Physics Mentoring Award Committee
+        </li>
+        <li class="service-item">
+          <img src="logo_APS_DNP.png" alt="Education Committee">
+          2023/06-present: Member of the APS Division of Nuclear Physics Education Committee
+        </li>
+      </ul>
+
+      <p><b>In the past, I also served in the following ways:</b></p>
+      <ul>
+        <li class="service-item">
+          <img src="logo_INTURN.png" alt="INTURN Program">
+          2023/08-2024/02: Co-organizer of the INT Undergraduate Research Network (INTURN) at the Institute for Nuclear Theory (INT), University of Washington
+        </li>
+        <li class="service-item">
+          <img src="logo_APS_DNP.png" alt="APS DNP Executive Committee">
+          2023/04-2024/04: Member of the APS Division of Nuclear Physics Executive Committee
+        </li>
+        <li class="service-item">
+          <img src="logo_LRP2023.png" alt="Community Leader for 2023 Long Range Plan">
+          2022/09-2023/02: Community leader in the U.S. Long Range Plan for Nuclear Science process
+        </li>
+        <li class="service-item">
+          <img src="logo_UW_Physics.png" alt="APS DNPDiversity Committee">
+          2022/09-2023/08: Member of the University of Washington's Physics Department Climate and Diversity Committee
+        </li>
+        <li class="service-item">
+          <img src="logo_RHIC.png" alt="RHIC & AGS Users' Executive Committee">
+          2021/06-2023/08: Student/Postdoc Member of the RHIC & AGS Users’ Executive Committee
+        </li>
+        <li class="service-item">
+          <img src="logo_UCLA_PA.png" alt="UCLA Physics Graduate Students Representative">
+          2016/02-2017/06: Representative for Physics Graduate Students at UCLA
+        </li>
+      </ul>
     </div>
   </body>
 </html>
