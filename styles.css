@@ -222,7 +222,7 @@ img.profile {
 
     /* Adjust the container to ensure it doesn't take up the entire width */
     .container {
-        width: 60%;  /* Use a percentage of the width (to leave space around it) */
+        width: 70%;  /* Use a percentage of the width (to leave space around it) */
         max-width: 600px;  /* Limit the max width on smaller screens */
         margin-top: 120px;  /* Add top margin (120px) to separate from the fixed header */
         padding: 1.5rem;   /* Adjust padding for better mobile appearance */
