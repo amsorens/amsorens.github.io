@@ -1,0 +1,233 @@
+
+/* Color schemes */     
+/*
+:root {
+    --overall-background: #8e8e90;
+    --header-background: #49494b; 
+    --header-text: #d1bfa7;
+    --navigation-background: #bd8c7d;
+    --navigation-text: black;
+    --main-background: white;
+    --main-text: black;
+    --primary-highlight: #ff9900;
+}
+*/
+:root {
+    --overall-background: #9df9ef;
+    --header-background: #51e2f5;
+    --header-text: black;
+    --navigation-background: #ffa8B6;
+    --navigation-text: black;
+    --main-background: white;
+    --main-text: black;
+    --primary-highlight: #edf7f6;
+    --secondary-highlight: #A28089;
+}
+
+
+      
+/* Define body style */     
+body {
+    /* background-color: var(--overall-background);*/
+    background: linear-gradient(to bottom,
+				#51e2f5 13%, #9df9ef 18%, #edf7f6 22%, #ffa8B6 26%,
+				#A28089 47%, #A78590 50%, #A28089 53%,
+				#ffa8B6 74%, #edf7f6 78%, #9df9ef 82%, #51e2f5 87%); /* Colors transition */
+    height: 200vh; /* 100vh = Full viewport height */
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Pseudo-element for static noise over the body style */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.3) 2px, transparent 2px);
+    background-size: 10px 10px; /* Controls particle density */
+    opacity: 0.4; /* Adjusts visibility */
+    pointer-events: none; /* Ensures it doesn't interfere with user interactions */
+}
+
+/* Define header style */
+header {
+    background: var(--header-background);
+    color: var(--header-text);
+    /*display: grid;*/
+    display: flex;
+    justify-content: center; /* Centers content inside the header */
+    position: fixed; /* keep it at the top of the page */
+    z-index: 1000; /* Ensures it stays on top */
+    align-items: center; /* Vertical centering */
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%; /* Ensures the header spans the full width */          
+}
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Space between left (name) and right (nav) */
+    width: 100%; /* Ensures the header content takes up full width */
+    max-width: 1200px; /* Maximum width */
+    padding: 0 20px;
+    align-items: center; /* Vertical centering */
+}
+.header-left {
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center; /* Vertical centering */
+}
+
+/* Define navigation style */
+nav {
+    background-color: var(--navigation-background);
+    color: var(--navigation-text);
+    max-width: 840px; /* Same width as container */
+    margin: 0 auto; /* Centers the nav */
+    padding: 10px 0; /* Adds spacing inside */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Right-align the navigation links */
+    box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.3), 10px 0px 15px rgba(0, 0, 0, 0.3); /* Shadow on both left and right */
+    border-radius: 15px; /* Curves the edges */
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--navigation-text);
+    font-weight: bold;
+}
+nav a.active {
+    background-color: var(--primary-highlight); /* Highlight color for active link */
+    border-radius: 5px;
+}
+
+/* Define main text field style */
+.container {
+    max-width: 800px;
+    background: var(--main-background); /* Keeps the main content readable */
+    color: var(--main-text);
+    margin: 20px auto;
+    margin-top: 90px;
+    font-weight: normal; /* Ensures text inside is not bold */
+    text-align: left;
+    padding: 2em 1rem; /* Dynamic padding */
+    box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.3), 10px 0px 15px rgba(0, 0, 0, 0.3); /* Shadow on both left and right */
+    border-radius: 15px; /* Curves the edges */
+    position: relative;
+    z-index: 1; /* Ensures it's above the noise */
+}
+
+/* Define style for the profile image */
+img.profile {
+    width: 150px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Define research list style */
+.research-list {
+    list-style-type: none;
+    padding: 0;
+}
+.research-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 10px solid #ccc;
+    padding: 10px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.research-item img {
+    width: 350px; /* Adjust icon size */
+    height: 350px;
+    margin-left: 30px;
+}
+.research-description {
+    flex: 1; /* Takes up remaining space */
+}
+
+/* Define service list style */
+.service-list {
+    list-style-type: none;
+    padding: 0;
+}
+.service-item {
+    display: flex;
+    flex-wrap: wrap; /* To behave well on a mobile screen*/
+    align-items: center;
+    border-bottom: 10px solid #ccc;
+    padding: 10px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.service-item img {
+    width: 250px; /* Adjust icon size */
+    height: auto;
+    margin-right: 30px;
+}
+.service-date {
+    width: 130px; /* Fixed width for date column */
+    font-weight: bold;
+    text-align: right;
+    margin-right: 25px;
+    flex-shrink: 0; /* this may help with behavior on a mobile screen */
+}
+.service-description {
+    flex: 1; /* Takes up remaining space */
+}
+
+
+/* Mobile-Friendly Styling */
+@media (max-width: 600px) {
+    /* styling for research list */
+    .research-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align all elements */
+        text-align: center; /* Center text for readability */
+    }
+    .research-item img {
+        width: 350px; /* Increase size slightly for better visibility */
+	height: auto;
+	margin-bottom: 10px;
+	padding: 0px 10px;
+    }
+    .research-date {
+        width: auto; /* Allow date to take full width */
+        text-align: center; /* Center align */
+    }
+    .research-description {
+        width: 100%; /* Full width */
+    }
+
+    /* styling for service list */
+    .service-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align all elements */
+        text-align: center; /* Center text for readability */
+    }
+    .service-item img {
+        width: 250px; /* Increase size slightly for better visibility */
+        height: auto;
+        margin-bottom: 10px;
+        padding: 0px 10px;
+    }
+    .service-date {
+        width: auto; /* Allow date to take full width */
+        text-align: center; /* Center align */
+    }
+    .service-description {
+        width: 100%; /* Full width */
+    }
+
+}
+
+

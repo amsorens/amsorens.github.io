@@ -4,82 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agnieszka Sorensen, PhD</title>
-    <style>
-      body {
-          font-family: "Times New Roman", Times, serif;;
-          margin: 0;
-          padding: 0;
-          text-align: center;
-      }
-      header {
-          background: #004466;
-          color: white;
-          padding: 20px;
-          font-size: 24px;
-      }
-      nav {
-          margin: 20px 0;
-      }
-      nav a {
-          margin: 0 15px;
-          text-decoration: none;
-          color: #004466;
-          font-weight: bold;
-      }
-      .container {
-          max-width: 800px;
-          margin: 20px auto;
-          text-align: left;
-          padding: 20px;
-      }
-      img.profile {
-          width: 150px;
-          border-radius: 50%;
-	  float: left;
-          margin-right: 20px;
-      }
-      .content {
-          overflow: hidden;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
+  
   <body>
     <header>
-      Agnieszka Sorensen, PhD
+      <div class="header-content">
+	<div class="header-left"><b>Agnieszka Sorensen, PhD</div>   
+	<nav>
+	  <a href="index.html" class="active">About</a>
+	  <a href="research.html">Research</a>
+	  <a href="service.html">Service</a>
+	  <a href="teaching.html">Teaching</a>
+	  <a href="resources.html">Resources for students</a>
+	  <a href="cv.html">CV</a>
+	  <a href="contact.html">Contact</a>
+	</nav>
+      </div>
     </header>
-    <nav>
-      <a href="index.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="service.html">Service</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="resources.html">Resources for students</a>
-      <a href="cv.html">CV</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    
     <div class="container">
       <img src="Agnieszka_Sorensen_office2.jpg"
 	   alt="Photo of Agnieszka Sorensen in front of a blackboard showing sketches of
 		heavy-ion collisions." class="profile">
       <h2>Hello!</h2>
-      <p>I am an Assistant Professor of Physics at the Facility for Rare Isotope Beams, a
+      <p>I am an Assistant Professor of Physics at the Facility for Rare Isotope Beams (FRIB), a
 	scientific user facility for nuclear science funded by the U.S. Department of
-	Energy and operated by the Michigan State University. I am a theorist in nuclear
-	physics, and my research centers on thermodynamic properties of dense
-	strongly-interacting matter. These thermodynamic properties can yield key insights
-	into the elementary mechanisms governing strongly-interacting systems which, while
-	in principle described by the theory of quantum chromodynamics (QCD), are
-	inaccessible &mdash; with a few exceptions in limiting cases &mdash; to direct QCD
+	Energy and operated by the Michigan State University. As a theorist in nuclear
+	physics, my research focuses on the thermodynamic properties of dense,
+	strongly-interacting matter. These properties can provide insights
+	into the fundamental mechanisms that govern such systems, which, although
+	described by the theory of quantum chromodynamics (QCD), remain largely
+	inaccessible &mdash; with exceptions in a few limiting cases &mdash; to direct QCD
 	calculations.
       </p>
 
-      <p>Thermodynamic properties of any system are often summarized in the form of its
-	equation of state (EOS) or its phase diagram. Determining the QCD EOS through
-	studies of matter in extreme environments &mdash; such as supernova explosions,
-	neutron stars and their mergers, and, in laboratories on Earth, relativistic
-	collisions of heavy nuclei &mdash; can help answer the following broad questions:
+      <p>Thermodynamic properties of a system are often summarized through its
+	equation of state (EOS) or its phase diagram. Studying the QCD EOS in extreme
+	environments &mdash; such as supernova explosions,
+	neutron stars and their mergers, and relativistic collisions of heavy nuclei &mdash;
+	can help answer several key questions:
 	<ul>
           <li>Does QCD matter undergo a first-order phase transition at finite baryon
-	    density?</li>
+	    density? If so, where is the corresponding QCD critical point?</li>
           <li>How does the isospin dependence of the EOS evolve with density and
 	    temperature?</li>
           <li>How do the dominant nuclear matter degrees of freedom and their properties
@@ -87,17 +54,21 @@
         </ul>
       </p>
 
-      <p>I aim to address these questions using collisions of heavy nuclei at relativistic
-	speeds, which I model theoretically within semiclassical transport simulations.
-	Since the simulations require various theoretical inputs, this research benefits
-	from close collaboration with complementary efforts to constrain the EOS and other
-	properties of QCD matter (e.g., neutron star studies or <i>ab initio</i>
-	calculations).
-	Devising the simulation framework is a team effort requiring efficient programming
-	solutions to reduce the computational cost. Comparisons to experimental data
-	always require extensive use of high-performance computing. Recently,
-	the high computational cost of the simulations has begun to be addressed with
-	machine learning methods. </p>
+      <p>I explore these questions by studying collisions of heavy nuclei at relativistic
+	speeds, which I model theoretically using semiclassical transport simulations.
+	These simulations require a variety of theoretical inputs, and my research benefits
+	from close collaboration with efforts in other areas of nuclear physics &mdash;
+	such as neutron star studies and <i>ab initio</i> calculations &mdash; that aim
+	to constrain the EOS and other properties of QCD matter. To facilitate wide-ranging
+	explorations of dense nuclear matter behavor, I develop maximally
+	flexible yet robust meta-models of the EOS, which are then implemented into the simulations.
+      </p>
+      <p> Developing the simulation framework is a team effort that requires efficient programming
+	solutions to minimize computational costs. Constraining the QCD EOS and uncovering
+	the QCD phase diagram relies on comparisons to experimental data, which require
+	extensive use of high-performance computing. Recently, to address the high computational
+	demands of these simulations, I have begun incorporating machine learning techniques into my work.
+      </p>
     </div>
   </body>
 </html>

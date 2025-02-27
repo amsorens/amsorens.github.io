@@ -4,89 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service - Agnieszka Sorensen, PhD</title>
-    <style>
-      body {
-          font-family: "Times New Roman", Times, serif;
-          margin: 0;
-          padding: 0;
-          text-align: center;
-      }
-      header {
-          background: #004466;
-          color: white;
-          padding: 20px;
-          font-size: 24px;
-          display: grid;
-          grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-          max-width: 800px;
-          margin: 0 auto;
-          align-items: center; /* Vertical centering */
-      }
-      nav {
-          margin: 20px 0;
-      }
-      nav a {
-          margin: 0 15px;
-          text-decoration: none;
-          color: #004466;
-          font-weight: bold;
-      }
-      .container {
-          max-width: 800px;
-          margin: 20px auto;
-          text-align: left;
-          padding: 20px;
-      }
-      /* Styling for service list */
-      .service-list {
-          list-style-type: none;
-          padding: 0;
-      }
-      .service-item {
-          display: flex;
-          align-items: center;
-	  border-bottom: 10px solid #ccc;
-	  padding: 10px 10px;
-	  margin-top: 5px;
-          margin-bottom: 5px;
-      }
-      .service-item img {
-          width: 259px; /* Adjust icon size */
-          height: 75px;
-          margin-right: 30px;
-      }
-      .service-date {
-          width: 120px; /* Fixed width for date column */
-          font-weight: bold;
-          text-align: right;
-          margin-right: 25px;
-      }
-      .service-description {
-          flex: 1; /* Takes up remaining space */
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
-      <div>Service</div>
-      <div style="font-size: 12pt;">Agnieszka Sorensen, PhD</div>
+      <div class="header-content">
+	<div class="header-left"><b>Agnieszka Sorensen, PhD</div>   
+	<nav>
+	  <a href="index.html">About</a>
+	  <a href="research.html">Research</a>
+	  <a href="service.html" class="active">Service</a>
+	  <a href="teaching.html">Teaching</a>
+	  <a href="resources.html">Resources for students</a>
+	  <a href="cv.html">CV</a>
+	  <a href="contact.html">Contact</a>
+	</nav>
+      </div>
     </header>
-    <nav>
-      <a href="index.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="service.html">Service</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="resources.html">Resources for students</a>
-      <a href="cv.html">CV</a>
-      <a href="contact.html">Contact</a>
-    </nav>
 
     <div class="container">
       <h2>Currently, I am serving in the following roles:</h2>
       <ul class="service-list">
         <li class="service-item">
           <img src="logo_INT.jpeg" alt="MINT Logo">
-          <div class="service-date">2024/09 - present</div>
+          <div class="service-date">2024/09 &ndash; present</div>
           <div class="service-description">
             Member of the Executive Committee for the Mentorships for Inclusive Nuclear Theory (MINT)
 	    program at the Institute for Nuclear Theory (INT), University of Washington
@@ -94,27 +35,27 @@
         </li>
         <li class="service-item">
           <img src="logo_APS_DNP.jpeg" alt="APS DNP Logo">
-          <div class="service-date">2024/06 - present</div>
+          <div class="service-date">2024/06 &ndash; present</div>
           <div class="service-description">
             Member of the APS Division of Nuclear Physics Mentoring Award Committee
           </div>
         </li>
         <li class="service-item">
           <img src="logo_APS_DNP.jpeg" alt="APS DNP Logo">
-          <div class="service-date">2023/06 - present</div>
+          <div class="service-date">2023/06 &ndash; present</div>
           <div class="service-description">
             Member of the APS Division of Nuclear Physics Education Committee
           </div>
         </li>
       </ul>
+    </div>
 
-
-      <br>
+    <div class="container">
       <h2>In the past, I also served in the following ways:</h2>
       <ul class="service-list">
         <li class="service-item">
           <img src="logo_INTURN.jpeg" alt="INTURN Logo">
-          <div class="service-date">2023/08 - 2024/02</div>
+          <div class="service-date">2023/08 &ndash; 2024/02</div>
           <div class="service-description">
             Co-organizer of the INT Undergraduate Research Network (INTURN) at the Institute for
 	    Nuclear Theory (INT), University of Washington
@@ -122,35 +63,35 @@
         </li>
         <li class="service-item">
           <img src="logo_APS_DNP.jpeg" alt="APS DNP Logo">
-          <div class="service-date">2023/04 - 2024/04</div>
+          <div class="service-date">2023/04 &ndash; 2024/04</div>
           <div class="service-description">
             Member of the APS Division of Nuclear Physics Executive Committee
           </div>
         </li>
         <li class="service-item">
           <img src="logo_LRP2023.jpeg" alt="2023 LRP Logo">
-          <div class="service-date">2022/09 - 2023/02</div>
+          <div class="service-date">2022/09 &ndash; 2023/02</div>
           <div class="service-description">
             Community leader in the U.S. Long Range Plan for Nuclear Science process
           </div>
         </li>
         <li class="service-item">
           <img src="logo_UW_Physics.jpeg" alt="UW Physics Department Logo">
-          <div class="service-date">2022/09 - 2023/08</div>
+          <div class="service-date">2022/09 &ndash; 2023/08</div>
           <div class="service-description">
             Member of the University of Washington's Physics Department Climate and Diversity Committee
           </div>
         </li>
         <li class="service-item">
           <img src="logo_RHICAGS.jpeg" alt="RHIC&AGS Users' Group Logo">
-          <div class="service-date">2021/06 - 2023/08</div>
+          <div class="service-date">2021/06 &ndash; 2023/08</div>
           <div class="service-description">
             Student/Postdoc Member of the RHIC & AGS Users’ Executive Committee
           </div>
         </li>
         <li class="service-item">
           <img src="logo_UCLA_PA.jpeg" alt="UCLA Physics & Astronomy Logo">
-          <div class="service-date">2016/02 - 2017/06</div>
+          <div class="service-date">2016/02 &ndash; 2017/06</div>
           <div class="service-description">
             Representative for Physics Graduate Students at UCLA
           </div>
