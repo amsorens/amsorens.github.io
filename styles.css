@@ -47,9 +47,23 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200vh;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.3) 2px, transparent 2px);
-    background-size: 10px 10px; /* Controls particle density */
+    height: 300vh;
+    /* Regular grid: */
+    background-image: radial-gradient(var(--secondary-highlight) 2px, transparent 2px);
+    background-size: 15px 15px;
+    /* "Random" dots: */
+    /* background-image:
+        radial-gradient(ellipse at 5% 10%, #A28089 4px 2px, transparent 4px),
+        radial-gradient(circle at 15% 25%, #A28089 3px 2px, transparent 5px),
+        radial-gradient(circle at 25% 75%, #A28089 4px 3px, transparent 4px),
+        radial-gradient(circle at 40% 60%, #A28089 4px 2px, transparent 4px),
+        radial-gradient(circle at 55% 30%, #A28089 2px 4px, transparent 6px),
+        radial-gradient(circle at 65% 85%, #A28089 2px, transparent 7px),
+        radial-gradient(circle at 75% 50%, #A28089 2px, transparent 7px),
+        radial-gradient(ellipse at 85% 15%, #A28089 2px 4px, transparent 4px),
+        radial-gradient(circle at 95% 90%, #A28089 2px, transparent 5px),
+        radial-gradient(circle at 50% 50%, #A28089 2px, transparent 6px);
+    background-size: 90px 90px; */
     opacity: 0.4; /* Adjusts visibility */
     pointer-events: none; /* Ensures it doesn't interfere with user interactions */
 }
@@ -58,6 +72,7 @@ body::before {
 header {
     background: var(--header-background);
     color: var(--header-text);
+    border-bottom: 5px solid var(--secondary-highlight);
     display: flex;
     justify-content: center; /* Centers content inside the header */
     position: fixed; /* keep it at the top of the page */
