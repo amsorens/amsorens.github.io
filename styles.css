@@ -224,8 +224,8 @@ img.profile {
     .container {
         width: 60%;  /* Use a percentage of the width (to leave space around it) */
         max-width: 600px;  /* Limit the max width on smaller screens */
-        margin: 10px auto;  /* Center the container with a little space around it */
-        padding: 1.5rem;  /* Adjust padding for better mobile appearance */
+        margin: 120px auto 10px;  /* Add top margin (120px) to separate from the fixed header */
+        padding: 1.5rem;   /* Adjust padding for better mobile appearance */
     }
 
     /* styling for research list */
