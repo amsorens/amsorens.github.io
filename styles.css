@@ -115,7 +115,6 @@ nav a.active {
     background: var(--main-background); /* Keeps the main content readable */
     color: var(--main-text);
     margin: 20px auto;
-    margin-top: 90px;
     font-weight: normal; /* Ensures text inside is not bold */
     text-align: left;
     padding: 2em 1rem; /* Dynamic padding */
@@ -123,13 +122,14 @@ nav a.active {
     border-radius: 15px; /* Curves the edges */
     position: relative;
     z-index: 1; /* Ensures it's above the noise */
+    margin-top: 90px;
 }
 
 /* Define style for the profile image */
 img.profile {
     width: 150px;
     border-radius: 30%;
-    float: left;
+    float: right;
     margin-right: 20px;
 }
 
@@ -218,6 +218,14 @@ img.profile {
         background-color: var(--primary-highlight); /* Highlight color for active link */
         border-radius: 5px;
         display: flex; /* Show the nav menu */
+    }
+
+    /* Adjust the container to ensure it doesn't take up the entire width */
+    .container {
+        width: 85%;  /* Use a percentage of the width (to leave space around it) */
+        max-width: 600px;  /* Limit the max width on smaller screens */
+        margin: 10px auto;  /* Center the container with a little space around it */
+        padding: 1.5rem;  /* Adjust padding for better mobile appearance */
     }
 
     /* styling for research list */
