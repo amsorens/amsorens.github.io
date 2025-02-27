@@ -245,6 +245,16 @@ img.profile {
         padding: 1.5rem;   /* Adjust padding for better mobile appearance */
     }
 
+    /* Adjust the profile image */
+    img.profile {
+        width: 100px;
+        border-radius: 30%;
+        float: right;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
     /* styling for research list */
     .research-item {
         flex-direction: column; /* Stack elements vertically */
