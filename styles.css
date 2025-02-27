@@ -58,7 +58,6 @@ body::before {
 header {
     background: var(--header-background);
     color: var(--header-text);
-    /*display: grid;*/
     display: flex;
     justify-content: center; /* Centers content inside the header */
     position: fixed; /* keep it at the top of the page */
@@ -85,6 +84,13 @@ header {
     align-items: center; /* Vertical centering */
 }
 
+/* Hamburger menu styling */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
+}
+
 /* Define navigation style */
 nav {
     background-color: var(--navigation-background);
@@ -95,6 +101,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Right-align the navigation links */
+    flex-wrap: wrap; /* Allow navigation links to wrap */
     box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.3), 10px 0px 15px rgba(0, 0, 0, 0.3); /* Shadow on both left and right */
     border-radius: 15px; /* Curves the edges */
 }
@@ -188,6 +195,42 @@ img.profile {
 
 /* Mobile-Friendly Styling */
 @media (max-width: 600px) {
+    /* Adjust header for smaller screens */
+    header {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .header-left {
+        font-size: 18px; /* Reduce font size for smaller screens */
+    }
+
+    /* Stack header content vertically on small screens */
+    .header-content {
+        flex-direction: column; /* Stack the header content */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Adjust the navigation */
+    nav {
+        justify-content: center; /* Center the links on small screens */
+        padding: 15px 0; /* Adjust padding for better spacing */
+    }
+
+    nav a {
+        margin: 5px 10px; /* Reduce the margin for smaller screens */
+    }
+
+    nav a.active {
+        background-color: var(--primary-highlight); /* Highlight color for active link */
+        border-radius: 5px;
+        display: flex; /* Show the nav menu */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger on small screens */
+    }
+
     /* styling for research list */
     .research-item {
         flex-direction: column; /* Stack elements vertically */

@@ -9,8 +9,13 @@
   <body>
     <header>
       <div class="header-content">
-	<div class="header-left"><b>Agnieszka Sorensen, PhD</div>   
-	<nav>
+	<div class="header-left"><b>Agnieszka Sorensen, PhD</div>
+	<!-- Hamburger icon -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            &#9776; <!-- This is the hamburger icon (three horizontal lines) -->
+        </div>
+	<!-- Ordinary navigation -->
+	<nav id="nav-menu">
 	  <a href="index.html">About</a>
 	  <a href="research.html" class="active">Research</a>
 	  <a href="service.html">Service</a>
@@ -54,6 +59,19 @@
         </li>
       </ul>
     </div>
+
+
+    <!-- JavaScript (Place this before the closing </body> tag) -->
+    <script>
+        // Get elements
+        const hamburgerMenu = document.getElementById("hamburger-menu");
+        const navMenu = document.getElementById("nav-menu");
+
+        // Toggle menu visibility when the hamburger is clicked
+        hamburgerMenu.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
 
