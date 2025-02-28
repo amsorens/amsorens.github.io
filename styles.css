@@ -22,6 +22,7 @@
     --main-text: black;
     --primary-highlight: #edf7f6;
     --secondary-highlight: #A28089;
+    --tertiary-highlight: white;
 }
 
 
@@ -31,7 +32,7 @@ body {
     /* background-color: var(--overall-background);*/
     background: linear-gradient(to bottom,
 				#51e2f5 13%, #9df9ef 18%, #edf7f6 22%, #ffa8B6 26%,
-				#A28089 47%, #A78590 50%, #A28089 53%,
+				#A28089 43%, #A28089 57%,
 				#ffa8B6 74%, #edf7f6 78%, #9df9ef 82%, #51e2f5 87%); /* Colors transition */
     height: 200vh; /* 100vh = Full viewport height */
     font-family: "Times New Roman", Times, serif;

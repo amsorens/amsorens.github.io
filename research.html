@@ -17,9 +17,9 @@
 	  <a href="index.html">About</a>
 	  <a href="research.html" class="active">Research</a>
 	  <a href="service.html">Service</a>
-	  <a href="teaching.html">Teaching</a>
-	  <a href="resources.html">Resources</a>
-	  <a href="press.html">In the press</a>
+	  <!--<a href="teaching.html">Teaching</a>-->
+	  <!--<a href="talks.html">Talks</a>-->
+	  <a href="press.html">Press</a>
 	  <a href="cv.html">CV</a>
 	  <a href="contact.html">Contact</a>
 	</nav>
@@ -30,18 +30,14 @@
       <h2>You can find all my publications on
 	<a href="https://inspirehep.net/authors/1274432?ui-citation-summary=true">InspireHEP</a>.</h2>
 
-      <p> My research explores the thermodynamic properties of dense, strongly interacting matter, 
-	offering insights into the fundamental mechanisms of the strong force. The underlying theory,
-	quantum chromodynamics (QCD), is well established, yet direct calculations remain &mdash;
-	with the exception of a few limiting cases &mdash; largely infeasible.
-      </p>
-
-      <p> Thermodynamic properties are encoded in the equation of state (EOS) and the phase diagram.
+      <p> My research explores the thermodynamic properties of dense, strongly interacting matter.	
+	These properties are encoded in the QCD equation of state (EOS).
 	Studying the EOS in extreme environments &mdash; such as supernovae, neutron stars and their
-	mergers, and relativistic collisions of heavy nuclei &mdash; helps address critical questions:
+	mergers, and relativistic collisions of heavy nuclei &mdash; helps address key questions
+	about strongly-interacting systems:
 	<ul>
-          <li>Does strongly-interacting  matter undergo a first-order phase transition at finite baryon
-	    density? If so, where is the corresponding QCD critical point?</li>
+          <li>Does QCD matter undergo a first-order phase transition at finite baryon
+	    density? </li>
           <li>How does the isospin dependence of the EOS evolve with density and
 	    temperature?</li>
           <li>How do nuclear matter degrees of freedom and their properties
@@ -50,54 +46,139 @@
       </p>
 
       <p>To investigate these questions, I model relativistic heavy-ion collisions using dynamic
-	microscopic transport simulations. These require a variety of theoretical inputs, and my
-	research benefits from close collaborations with neutron star studies and <i>ab initio</i>
-	calculations that can independently constrain the EOS and properties of QCD matter.
-	A lot of my research focuses on developing flexible EOS meta-models that can be
-	implementated in simulations and enable broad explorations of the properties of
-	dense nuclear matter.
-      </p>
-      <p> Developing the simulation framework is a team effort that requires efficient programming
-	solutions to minimize computational costs. Constraining the QCD EOS and uncovering
-	the QCD phase diagram relies on comparisons to experimental data, which require
+	microscopic transport simulations. A lot of my research focuses on developing flexible EOS
+	meta-models which constitute an adjustable input to the simulations. Constraining the QCD EOS and uncovering
+	the QCD phase diagram relies on comparisons to experimental data, which in turn require
 	extensive use of high-performance computing. Recently, to address the high computational
-	demands of these simulations, I have begun incorporating machine learning techniques into my work.
+	cost of such analyses, I have begun incorporating machine learning techniques into my work.
       </p>
       <br>
       <h2>Currently, I am working on the following projects:</h2>
       <ul class="research-list">
+	
         <li class="research-item">
           <div class="research-description">
             <h3>Locating the critical point for the hadron to quark-gluon plasma phase transition from finite-size scaling of proton cumulants in heavy-ion collisions</h3>
-	    We study how the number of protons produced in collisions of gold nuclei fluctuates,
-	    searching for signs of the QCD critical point in the phase diagram of nuclear matter.
+	    In this first analysis of experimental data to locate the QCD critical point in a range
+	    consistent with modern theoretical predictions, we study fluctuations of the number of protons
+	    produced in collisions of gold nuclei.
 	    By adjusting the portion of the collision we analyze (using proton fluctuations measured
 	    in different rapidity bin widths), we test how fluctuations scale with system size.
-	    At collision energies above \( \sqrt{s_{NN}} = 7.7~\rm{GeV}\), we observe that the data
+	    At collision energies above \( \sqrt{s_{\rm{NN}}} = 7.7~\rm{GeV}\), we observe that the data
 	    follows Taylor’s law, which suggests scale-free behavior: something expected near a critical point.
-	    Our findings indicate a critical point near a baryon chemical potential of \( \mu_B = 580 \pm 30~\rm{MeV} \),
-	    consistent with modern theoretical predictions.
+	    Our analysis indicates a critical point near a baryon chemical potential of \( \mu_B = 580 \pm 30~\rm{MeV} \).
+	    <br>
+	    <br>
+	    You can read this work <a href="https://arxiv.org/pdf/2405.10278">here</a>.
           </div>
-	  <img src="Research_figure_FSS.jpeg" alt="Finite-size scaling">
+	  <img src="research_figure_FSS.jpeg" alt="Finite-size scaling">
         </li>
+	
         <li class="research-item">
           <div class="research-description">
-            Project 2.
+	    <h3>Volume dependence of second-order baryon cumulant ratio in hadronic transport simulations</h3>
+	    Using hadronic transport simulations of symmetric nuclear matter with mean-field interactions
+	    in a box with periodic boundary conditions, I study the dependence of the ratio of variance to mean
+	    on the considered subvolume and technical parameters of the simulation such as the number of
+	    test particles per particle, mean-field lattice spacing, and smearing radius for density calculation.
+	    I find that the results do not depend on the number of test particles (as long as it's large enough
+	    to warrant a reliable density calculation) or the smearing radius.
+	    Further, I show that the dependence on the microscopic scale -- the lattice spacing -- is suppressed as
+	    compared to the dependence on the subvolume, which follows a power law.
+	    Finally, I show that in the limit of an infinite subvolume and infinitesimal lattice spacing, the
+	    simulation results approach the value expected from the underlying mean-field EOS.
+	    <br>
+	    <br>
+	    The manuscript is currently in preparation.
           </div>
-	  <img src="Research_figure_cumulants_in_boxes.jpeg" alt="Volume dependence of cumulants">
+	  <img src="research_figure_cumulants_in_boxes.jpeg" alt="Volume dependence of cumulants">
         </li>
+	
       </ul>
     </div>
 
     <div class="container">
       <h2>My past projects include:</h2>
       <ul class="research-list">
+
+	<li class="research-item">
+          <div class="research-description">
+	    <h3>Speed of sound from neutron stars to heavy-ion collisions</h3>
+            In this project, we explored the compatibility of several neutron-star EOSs with a large peak
+	    in the speed of sound squared as a function of density, favored by observational data,
+	    with heavy-ion collision measurements.
+	    To convert from a neutron-star EOS to an EOS applicable in heavy-ion collisions, we explored
+	    a range of possible symmetry energy expansion coefficients and rejected coefficient sets
+	    which led to acausal, unstable, or unphysical behavior of nuclear matter.
+	    This in turn put a constraint on the high-density behavior of the symmetry energy, as can be
+	    seen in the figure.
+	    Using a flexible parametrization of density-dependent mean-field interactions, we then compared
+	    results using the converted EOSs against experimental data, and we found that a neutron-star EOS
+	    with a peak in the speed of sounds squared around twice the saturation density of nuclear  matter
+	    is the most favored.
+	    <br>
+	    <br>
+	    You can read this work <a href="https://arxiv.org/pdf/2311.18819">here</a>.
+          </div>
+	  <img src="research_figure_NS_to_HIC.jpeg" alt="">
+        </li>
+	
         <li class="research-item">
           <div class="research-description">
-            Past project 1.
+	    <h3>Bayesian analysis of Beam Energy Scan FXT data</h3>
+            In this project, we used flexible density-dependent mean-field potentials in a Bayesian
+	    analysis of STAR measurements of golg-gold collisions at \( \sqrt{s_{\rm{NN}}} = \{3.0, ~4.5\}~\rm{GeV} \).
+	    The flexibility of the potentials allowed for a meaningful exploration of the behavior of the EOS
+	    at high baryon densities, leading to a Bayesian constraint that suggests a strong softening of the EOS
+	    -- and possibly even a first-order phase transition -- at densities between 3~and~4 times the nuclear
+	    saturation density (as indicated by the area with green vertical stripes in the figure). 
+	    This nontrivial result at high densities was inaccessible in previous studies (see area with black horizontal
+	    stripes in the figure), which used potentials parametrized using only a single parameter: the incompressibility
+	    of nuclear matter at saturation, making it impossible to account for changes in the behavior of nuclear matter
+	    at high densities.
+	    <br>
+	    <br>
+	    You can read this work <a href="https://arxiv.org/pdf/2208.11996">here</a>.
           </div>
-	  <img src="Research_figure_Bayesian_FXT_VDF.jpeg" alt="Bayesian analysis of FXT data with VDF potentials">
+	  <img src="research_figure_Bayesian_FXT_VDF.jpeg" alt="Bayesian analysis of FXT data with VDF potentials">
         </li>
+
+	<li class="research-item">
+          <div class="research-description">
+	    <h3>Speed of sound from baryon cumulants in heavy-ion collisions</h3>
+            In this work, I connected cumulants of baryon number to the isothermal speed of sound squared \(c_T^2 \)
+	    and its derivative with respect to the baryon density.
+	    Using experimental data (red triangles in the figure) compared to a model (purple stars), I showed that
+	    the density-derivative of \(c_T^2 \) plateaus as collision energy is decreased (within the collider range
+	    of the BES, \(\sqrt{s_{\rm{NN}}} \geq 7.7~\rm{GeV}\)), but then dramatically increases at the HADES collision
+	    energy of \(\sqrt{s_{\rm{NN}}} = 2.4~\rm{GeV}\).
+	    This suggests a dramatic change in the behavior of the speed sound between these two energy regimes.
+	    <br>
+	    <br>
+	    You can read this work <a href="arXiv.https://arxiv.org/pdf/2103.07365">here</a>.
+          </div>
+	  <img src="research_figure_cs2_from_cumulants.jpeg" alt="Extraction of the derivative of cs2 from cumulants">
+        </li>
+
+	<li class="research-item">
+          <div class="research-description">
+	    <h3>Flexible density-dependent EOS for hadronic transport</h3>
+            In this work I developed flexible, relativistically-covariant vector density functional (VDF)
+	    model of mean-field interactions. The model has been designed to allow for high flexibility of the EOS.
+	    For applications to hadronic transport simulations of heavy-ion collisions, the EOS at low to moderate densities
+	    is parametrized to reproduce the known properties of nuclear matter (such as the saturation density,
+	    binding energy, and the location of the nuclear liquid-gas critical point), while at higher density the EOS
+	    are fit to produce a postulated first-order phase transition.
+	    In the figure, I show coexistence (solid lines) and spinodal (dashed lines) regions for the nuclear-liquid gas
+	    phase transition (black) and several postulated phase transitions at high density (colorful lines) with varying
+	    location of the critical point and/or width of the coexistence region.
+	    <br>
+	    <br>
+	    You can read this work <a href="https://arxiv.org/pdf/2011.06635">here</a>.
+          </div>
+	  <img src="research_figure_VDF.jpeg" alt="Example coexistence regions in the T-nB plane from several VDF EOSs">
+        </li>
+	
       </ul>
     </div>
 
