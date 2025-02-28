@@ -219,6 +219,7 @@ img.profile {
     width: 350px; /* Adjust icon size */
     height: auto;
     margin-right: 30px;
+    border: 10px solid #ccc;
 }
 .press-description {
     flex: 1; /* Takes up remaining space */
