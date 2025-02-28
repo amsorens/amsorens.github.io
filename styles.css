@@ -202,6 +202,29 @@ img.profile {
     flex: 1; /* Takes up remaining space */
 }
 
+/* Define press list style */
+.press-list {
+    list-style-type: none;
+    padding: 0;
+}
+.press-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 10px solid #ccc;
+    padding: 10px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.press-item img {
+    width: 350px; /* Adjust icon size */
+    height: auto;
+    margin-right: 30px;
+}
+.press-description {
+    flex: 1; /* Takes up remaining space */
+}
+
+
 
 /* Mobile-Friendly Styling */
 @media (max-width: 600px) {
