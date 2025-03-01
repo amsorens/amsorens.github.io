@@ -293,10 +293,6 @@ img.profile {
 	margin-bottom: 10px;
 	padding: 0px 10px;
     }
-    .research-date {
-        width: auto; /* Allow date to take full width */
-        text-align: center; /* Center align */
-    }
     .research-description {
         width: 100%; /* Full width */
     }
@@ -318,6 +314,22 @@ img.profile {
         text-align: center; /* Center align */
     }
     .service-description {
+        width: 100%; /* Full width */
+    }
+
+    /* styling for press list */
+    .press-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align all elements */
+        text-align: center; /* Center text for readability */
+    }
+    .press-item img {
+        width: 250px; /* Decrease size slightly to fit within the window */
+	height: auto;
+	margin-bottom: 10px;
+	padding: 0px 10px;
+    }
+    .press-description {
         width: 100%; /* Full width */
     }
 
